@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -----------------------body------------------------- */
+body{
+    background-image: url("./image/shara desert.jpg");
+}
+/* ----------------------------header------------------------------- */
+.container-1{
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+
+.logo{
+    height: 90px;
+    padding: 4px;
+}
+.navbar{
+    display: flex;
+}
+.nav-bar-menu{
+    margin-left: 360px;
+}
+ul li{
+   
+    list-style: none;
+    display: inline-block;
+    max-width: 20px 40px;
+    padding: 30px;
+    color: white;
+}
+.menu{
+    transform: translateY(25%);
+}
+    /* -------------------------left container---------------------------- */
+
+ h1{
+    font-size: 100px;
+    color: white;
+ }
+ .section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+ }
+ .container-2{
+    display: inline-block;
+    display: flex;
+   justify-content: center;
+   
+   
+    
+    width: 900px;
+    
+    
+ }
+ .left{
+    height: 400px;
+    text-align: left;
+    padding: 90px;
+    
+    position: relative;
+    top: 50px;
+    right: 150px;
+  
+    
+ 
+
+ }
+ button{
+    width: 200px;
+    height: 30px;
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+ }
+ .left p{
+    padding: 20px;
+ }
+
+    /* ---------------------------------------right container----------------------------- */
+
+.right{
+    display: grid;
+    grid-template-columns:  250px 250px;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.box{
+   
+    height: 250px;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+}
+.box1{
+    background-image: url("./image/pic-1.png");
+    background-size: cover;
+   
+}
+.box2{
+    background-image: url("./image/pic-2.png");
+    background-size: cover;
+  
+}
+.box3{
+    background-image: url("./image/pic-3.png");
+    background-size: cover;
+
+}
+.box4{
+    background-image: url("./image/pic-4.png");
+    background-size: cover;
+  
+}
+.container-2{
+    display: flex;
+}
+.box:hover{
+    transform: translateY(-15px);
+}
+.box1{
+    background-image: url("./image/pic-1.png");
+    background-size:cover ;
+    background-position: center;
+    
+}
+h3{
+    color: white;
+   padding: 10px;
+    
+
+}
+p{
+    color: white;
+    padding: 10px;
+   
+}
+
+
+/* -------------------------------------------media query----------------------------------- */
+
+
+/* ---------------------------------for tablet-------------------------------- */
+
+
+/* --------------------for tablet-------------------------- */
+@media (min-width: 661px) and (max-width: 856px) {
+    /* -----------------------------left container-------------------------- */
+    h1{
+        font-size: 50px;
+        color: white;
+     }
+     .container-2{
+        display: flex;
+        flex-wrap: wrap;
+        
+     }
+    
+    
+    .left{
+        position: relative;
+        left: 71px;
+        top: -90px;
+  
+        
+    }
+    /* --------------------------------right container-------------------------------- */
+        
+    .right{
+        position: relative;
+        top: -143px;
+        right: -3%;
+    }
+    .right{
+        display: grid;
+        grid-template-columns: 500px;
+        gap: 30px;
+        justify-content: space-around;
+    }
+    
+}
+
+
+/* -----------------------------------for mobile----------------------------------------- */
+
+
+@media (min-width: 336px) and (max-width: 640px){
+
+    /* ---------------------------nav bar------------------------------- */
+    ul li{
+
+        list-style: none;
+        display: inline;
+
+    }
+    .logo{
+        position: relative;
+        left: 79px;
+    }
+    .nav-bar-menu{
+        margin-left: 360px;
+        position: relative;
+        right: 124px;
+    }
+    .menu{
+        transform: translateY(25%);
+        position: absolute;
+        bottom: 55px;
+    }
+     /* -----------------------------left container-------------------------- */
+     h1{
+        font-size: 50px;
+        color: white;
+     }
+     .container-2{
+        display: flex;
+        flex-wrap: wrap;
+       
+        
+     }
+    
+    
+    .left{
+        position: relative;
+        left: 49px;
+        top: 33px;
+        margin-bottom: 80px;
+        padding: 6px;
+  
+        
+    }
+    /* --------------------------------right container-------------------------------- */
+        
+    .right{
+        position: relative;
+      
+        top: -143px;
+        right: -11%;
+    }
+    .right{
+        display: grid;
+        grid-template-columns: 288px;
+        gap: 30px;
+        justify-content: space-around;
+    }
+    
+}
+
