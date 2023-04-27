@@ -155,7 +155,14 @@ p{
 
 
 /* --------------------for tablet-------------------------- */
-@media (min-width: 661px) and (max-width: 856px) {
+
+
+
+@media  (max-width: 856px) {
+    
+
+
+
     /* -----------------------------left container-------------------------- */
     h1{
         font-size: 50px;
